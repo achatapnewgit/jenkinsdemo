@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    tools{
+      maven 'maven3'
+      jdk 'jdk8'
+    }
+    stages {
+        stage('build') {
+            steps {
+                echo "executing build stage"
+                sh 'mvn --version'
+                sh 'java --version'
+            
+                
+            }
+        }
+    }
+}
