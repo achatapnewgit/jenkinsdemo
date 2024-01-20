@@ -12,9 +12,7 @@ pipeline {
                 sh 'mvn --version'
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} and name is ${env.name} and I am ${env.title} "
             
-                withCredentials([usernamePassword(credentialsId: 'cred', passwordVariable: 'password', usernameVariable: 'username')]) {
-                        
-                    }
+                
             }
         }
     }
