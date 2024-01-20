@@ -14,10 +14,6 @@ pipeline {
                 
             }
         }
-        stage('email'){
-            steps{
-                mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: 'achatapnew@gmail.com'
-            }
-        }
+        
     }
 }
