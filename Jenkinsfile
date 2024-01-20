@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 echo "executing build stage"
-                echo "hello"
+                echo "hello Anurag"
                 sh 'mvn --version'
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} and name is ${env.name} and I am ${env.title} "
             
