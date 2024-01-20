@@ -14,5 +14,10 @@ pipeline {
                 
             }
         }
+        stage('email'){
+            steps{
+                emailext body: 'check email', subject: 'testing demo ', to: 'achatapnew@gmail.com'
+            }
+        }
     }
 }
