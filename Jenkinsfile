@@ -16,7 +16,7 @@ pipeline {
         }
         stage('email'){
             steps{
-                emailext body: 'check email', subject: 'testing demo ', to: 'achatapnew@gmail.com'
+                mail bcc: '', body: 'test', cc: '', from: '', replyTo: '', subject: 'test', to: 'achatapnew@gmail.com'
             }
         }
     }
